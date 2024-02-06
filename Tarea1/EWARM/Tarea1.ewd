@@ -2,7 +2,7 @@
 <project>
 	<fileVersion>3</fileVersion>
 	<configuration>
-		<name>Tarea1_SAC</name>
+		<name>Tarea1</name>
 		<toolchain>
 			<name>ARM</name>
 		</toolchain>
@@ -1025,7 +1025,7 @@
 				</option>
 				<option>
 					<name>CCCpuClockEdit</name>
-					<state>16.0</state>
+					<state>72.0</state>
 				</option>
 				<option>
 					<name>CCSwoClockAuto</name>

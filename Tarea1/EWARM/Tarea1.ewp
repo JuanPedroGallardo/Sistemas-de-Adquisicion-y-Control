@@ -2,7 +2,7 @@
 <project>
   <fileVersion>3</fileVersion>
   <configuration>
-    <name>Tarea1_SAC</name>
+    <name>Tarea1</name>
     <toolchain>
       <name>ARM</name>
     </toolchain>
@@ -16,15 +16,15 @@
         <debug>1</debug>
         <option>
           <name>ExePath</name>
-          <state>Tarea1_SAC/Exe</state>
+          <state>Tarea1/Exe</state>
         </option>
         <option>
           <name>ObjPath</name>
-          <state>Tarea1_SAC/Obj</state>
+          <state>Tarea1/Obj</state>
         </option>
         <option>
           <name>ListPath</name>
-          <state>Tarea1_SAC/List</state>
+          <state>Tarea1/List</state>
         </option>
         <option>
           <name>GEndianMode</name>
@@ -659,7 +659,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>Tarea1_SAC.hex</state>
+          <state>Tarea1.hex</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -702,7 +702,7 @@
         <debug>1</debug>
         <option>
           <name>IlinkOutputFile</name>
-          <state>Tarea1_SAC.out</state>
+          <state>Tarea1.out</state>
         </option>
         <option>
           <name>IlinkLibIOConfig</name>
@@ -1099,12 +1099,6 @@
         <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c</name>
-      </file>
-      <file>
-        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c</name>
-      </file>
-      <file>
         <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c</name>
       </file>
       <file>
@@ -1142,6 +1136,30 @@
       </file>
       <file>
         <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_eth.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pcd_ex.c</name>
+      </file>
+      <file>
+        <name>$PROJ_DIR$/../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_ll_usb.c</name>
       </file>
     </group>
     <group>
