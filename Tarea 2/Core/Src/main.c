@@ -67,6 +67,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	switch(currentState) {
 	case STATE_S0:
 	{
+		//Estando en el estado S0 si se pulsa B2(cable) pasa al estado S1, y si se pulsa el
+		//B1(boton) pasa al estado S3
 
 		if (GPIO_Pin == B2_Pin) {
 			printf("State = S1\r\n");
@@ -86,6 +88,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	case STATE_S1:
 	{
 
+		//Estando en el estado S1 si se pulsa B2(cable) pasa al estado S2, y si se pulsa el
+		//B1(boton) pasa al estado S0
 		if (GPIO_Pin == B2_Pin) {
 			printf("State = S2\r\n");
 			HAL_GPIO_WritePin(GPIOB, LED_GREEN_Pin, GPIO_PIN_SET);
@@ -104,6 +108,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 	case STATE_S2:
 	{
 
+		//Estando en el estado S2 si se pulsa B2(cable) pasa al estado S3, y si se pulsa el
+		//B1(boton) pasa al estado S1
 		if (GPIO_Pin == B2_Pin) {
 			printf("State = S3\r\n");
 			HAL_GPIO_WritePin(GPIOB, LED_GREEN_Pin, GPIO_PIN_RESET);
@@ -121,6 +127,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 
 	case STATE_S3:
 	{
+		//Estando en el estado S3 si se pulsa B2(cable) pasa al estado S0, y si se pulsa el
+		//B1(boton) pasa al estado S2
 		if (GPIO_Pin == B2_Pin) {
 			printf("State = S0\r\n");
 			HAL_GPIO_WritePin(GPIOB, LED_GREEN_Pin, GPIO_PIN_SET);
@@ -297,6 +305,8 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+//Esta función sale en los videos de ayuda de esta práctica y se crea para que muestre por consola
+//los estados en los que estamos y así vamos viendo los cambios de estado
 int _write(int file, char *ptr, int len)
 {
 	int DataIdx;
